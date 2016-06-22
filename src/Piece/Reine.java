@@ -1,4 +1,7 @@
-package application;
+package Piece;
+
+import application.Deplacement;
+import application.Piece;
 
 public class Reine extends Piece {
 

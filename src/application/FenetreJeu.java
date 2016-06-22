@@ -7,6 +7,9 @@ import javax.swing.JPanel;
 import java.awt.Rectangle;
 import javax.swing.BorderFactory;
 import javax.swing.border.EtchedBorder;
+
+import Piece.*;
+
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;

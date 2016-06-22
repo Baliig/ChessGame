@@ -1,9 +1,9 @@
 eclipse.preferences.version=1
+encoding//src/Piece/Fou.java=UTF-8
+encoding//src/Piece/Pion.java=UTF-8
+encoding//src/Piece/Reine.java=UTF-8
+encoding//src/Piece/Roi.java=UTF-8
 encoding//src/application/Echiquier.java=UTF-8
 encoding//src/application/FenetreJeu.java=UTF-8
-encoding//src/application/Fou.java=UTF-8
 encoding//src/application/Piece.java=UTF-8
-encoding//src/application/Pion.java=UTF-8
 encoding//src/application/Position.java=UTF-8
-encoding//src/application/Reine.java=UTF-8
-encoding//src/application/Roi.java=UTF-8

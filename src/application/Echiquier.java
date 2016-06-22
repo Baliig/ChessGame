@@ -1,5 +1,7 @@
 package application;
 
+import Piece.*;
+
 public class Echiquier implements MethodesEchiquier {
 
   private Case[][] location;
