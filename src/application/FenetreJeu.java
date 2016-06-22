@@ -19,15 +19,15 @@ import java.awt.Color;
 
 public class FenetreJeu extends JFrame {
 
-  private Echiquier  e;                                                               // echiquier
-  private JLabel[][] tab;                                                           // tableau
-                                                                                    // de
-                                                                                    // JLabels
+  private Echiquier  e;                                                                                              // echiquier
+  private JLabel[][] tab;                                                                                        // tableau
+                                                                                                                 // de
+                                                                                                                 // JLabels
 
-  private JPanel     panelControle = new JPanel();         // panel du haut
-  private JPanel     panelGrille   = new JPanel();         // panel du bas (
-                                                           // grille
-                                                           // )
+  private JPanel     panelControle = new JPanel();             // panel du haut
+  private JPanel     panelGrille   = new JPanel();             // panel du bas (
+                                                               // grille
+                                                               // )
   GridLayout         gridLayout1   = new GridLayout();
 
   private JButton    boutonDebuter = new JButton();
@@ -128,7 +128,7 @@ public class FenetreJeu extends JFrame {
         champTexte.setText("C'est le tour aux blanc");
         boutonDebuter.setEnabled(false);
         e.debuter(); // code
-        String dossierIcone = "Icone/";
+        String dossierIcone = "src/Icone/";
         char[] ordrePiece = { 'T', 'C', 'F', 'D', 'R', 'F', 'C', 'T' };
         int increment = 1;
         int ligne = 0;
@@ -136,7 +136,7 @@ public class FenetreJeu extends JFrame {
         Piece tempo = null;
         e.debuter(); // code
 
-        // Je place les ic™nes des pices sur leur cases respectives
+        // Je place les icônes des pices sur leur cases respectives
         while (increment >= -1) {
           for (int ctr = 0; ctr <= 7; ctr++) {
             tab[ctr][ligne].setIcon(new ImageIcon(
