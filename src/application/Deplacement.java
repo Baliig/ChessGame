@@ -4,19 +4,10 @@ public class Deplacement {
 
   private double   deplacementX;
 
-  /**
-   * Deplacement sur l'axe des Y
-   */
   private double   deplacementY;
 
-  /**
-   * Coordonnee de la case d'arrivee
-   */
   private Position arrivee;
 
-  /**
-   * Coordonnee de la case de depart
-   */
   private Position depart;
 
   public Deplacement(Position depart, Position arrivee) {
@@ -42,7 +33,6 @@ public class Deplacement {
     return depart;
   }
 
-  // vérifie si le déplacement est nul.
   public boolean isNul() {
     return deplacementX == 0 && deplacementY == 0;
   }

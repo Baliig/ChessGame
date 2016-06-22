@@ -14,24 +14,17 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Color;
 
-/**
- * classe Fenetre jeu servant ˆ representer la GUI du jeu d'echec, contient la
- * planche de jeu, les boutons debuter et reset, et le champ texte informant le
- * joueur sur le tour. Contient Žgalement deux jPanel contenant les pieces
- * mangŽes.
- * 
- * @author Francois Allard
- */
 public class FenetreJeu extends JFrame {
-  /**
-   * Echiquier du jeu, contient le tableau de case.
-   */
-  private Echiquier  e;                                // echiquier
-  private JLabel[][] tab;                              // tableau de JLabels
 
-  private JPanel     panelControle = new JPanel();     // panel du haut
-  private JPanel     panelGrille   = new JPanel();     // panel du bas ( grille
-                                                       // )
+  private Echiquier  e;                                                               // echiquier
+  private JLabel[][] tab;                                                           // tableau
+                                                                                    // de
+                                                                                    // JLabels
+
+  private JPanel     panelControle = new JPanel();         // panel du haut
+  private JPanel     panelGrille   = new JPanel();         // panel du bas (
+                                                           // grille
+                                                           // )
   GridLayout         gridLayout1   = new GridLayout();
 
   private JButton    boutonDebuter = new JButton();
@@ -40,9 +33,6 @@ public class FenetreJeu extends JFrame {
   private JPanel     panelblanc    = new JPanel();
   private JPanel     panelnoir     = new JPanel();
 
-  /**
-   * Constructeur, appelle mŽthode JBInit
-   */
   public FenetreJeu() {
     try {
       jbInit();
@@ -52,10 +42,6 @@ public class FenetreJeu extends JFrame {
 
   }
 
-  /**
-   * initialise la surface de jeu. CrŽŽ tout les Žlements et initialise leur
-   * position leur couleur.. etc
-   */
   private void jbInit() throws Exception {
 
     tab = new JLabel[8][8]; // création du tableau de JLabel
@@ -121,12 +107,6 @@ public class FenetreJeu extends JFrame {
 
   }
 
-  /**
-   * classe privee pour la gestion des evenement de la souris.
-   * 
-   * @author Francois
-   *
-   */
   private class GestionnaireEvenement extends MouseAdapter {
 
     Piece     pieceTampon     = null;
@@ -137,12 +117,6 @@ public class FenetreJeu extends JFrame {
     String    couleurControle = "blanc";
     Position  temp            = null;
 
-    /**
-     * methode s'excutant si l'on clique sur la surface de jeu. La methode
-     * determine ensuite ou est-ce que l'on cliquer et fait les action en
-     * consequence
-     *
-     */
     public void mouseClicked(MouseEvent eve) {
       // si on clique sur le bouton débuter
       if (eve.getSource() == boutonDebuter) {
